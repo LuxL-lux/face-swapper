@@ -1,0 +1,39 @@
+[project]
+name = "face-swapper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lukas.lux", email = "lukas.lux@alexanderthamm.com" }
+]
+requires-python = ">=3.10.0,<3.11.0"
+dependencies = [
+    "pillow>=9.5.0",
+    "protobuf>=4.23.2",
+    "addict",
+    "future",
+    "lmdb",
+    "numpy",
+    "Pillow",
+    "pyyaml",
+    "requests",
+    "scikit-image",
+    "scipy",
+    "tb-nightly",
+    "torch>=1.7.1",
+    "torchvision",
+    "tqdm",
+    "yapf",
+    "lpips",
+    "insightface>=0.7.3",
+    "onnxruntime-gpu==1.16.1",
+    "opencv-python>=4.10.0.84",
+    "pyav>=13.1.0",
+]
+
+[project.scripts]
+face-swapper = "face_swapper:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

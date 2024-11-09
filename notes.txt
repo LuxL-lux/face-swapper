@@ -1,0 +1,8 @@
+
+uv sync
+uvx --from light-the-torch ltt install --pytorch-computation-backend=cu118 torch>=1.7.1 torchvision
+uvx --from light-the-torch ltt install --pytorch-computation-backend=cpu torch>=1.7.1 torchvision
+
+wget https://huggingface.co/hacksider/deep-live-cam/resolve/main/inswapper_128.onnx
+wget https://huggingface.co/hacksider/deep-live-cam/resolve/main/GFPGANv1.4.pth
+
